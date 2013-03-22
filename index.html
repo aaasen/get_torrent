@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GetTorrent by aaasen</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>GetTorrent</h1>
+        <p>An API for sharing</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/aaasen/get_torrent" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/aaasen/get_torrent/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/aaasen/get_torrent/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>GetTorrent: an API for <em>sharing</em>
+</h1>
+
+<p>GetTorrent is an API for peer to peer file sharing sites like The Pirate Bay.</p>
+
+<p>File sharing sites are awesome, but they're a total pain for developers.
+Some have terribly formatted HTML, others protect from robots.
+To make it worse (for devs at least), there are <em>tons</em> of them.</p>
+
+<h3>GetTorrent takes care of these inconsistencies so you don't have to</h3>
+
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">tpb</span> <span class="o">=</span> <span class="n">GetTorrent</span><span class="p">(</span><span class="s">'../../sources/pirate_bay.json'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">tpb</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">'ubuntu'</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="s">'seeders'</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="s">'title'</span><span class="p">:</span> <span class="s">'Ubuntu 12.10'</span><span class="p">,</span>
+    <span class="s">'seeders'</span><span class="p">:</span> <span class="s">'64'</span><span class="p">,</span>
+    <span class="s">'leechers'</span><span class="p">:</span> <span class="s">'8'</span><span class="p">,</span>
+    <span class="s">'magnet'</span><span class="p">:</span> <span class="s">'magnet:...'</span><span class="p">,</span>
+    <span class="s">'url'</span><span class="p">:</span> <span class="s">'/torrent/...'</span>
+<span class="p">}</span>
+<span class="o">...</span>
+</pre></div>
+
+<p><em>Magic.</em></p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/aaasen">aaasen</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
